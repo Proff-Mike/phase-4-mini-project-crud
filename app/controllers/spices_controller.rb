@@ -13,7 +13,7 @@ wrap_parameters format: {}
   end 
 
   def create
-    spice = Spice.create(spice_params)
+    spice = Spices.create(spice_params)
     render json: spice, status: :created
   end
 
